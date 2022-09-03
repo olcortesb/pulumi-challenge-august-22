@@ -81,3 +81,5 @@ fs.readdirSync(staticWebsiteDirectory).forEach((file) => {
       },
     }
   );
+
+  export const url = cloudfrontDistribution.domainName
