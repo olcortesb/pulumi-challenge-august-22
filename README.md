@@ -18,14 +18,14 @@ In the official page of Pulumi is all informations about the challenge, text , v
 # Tips and Trick
 
 ### Update to latest version of Pulumi:
-```
+```bash
 # for macOs
 brew upgrade pulumi 
 ```
 
 Verify the version
 
-```
+```bash
 pulumi version                                       
 v3.39.1
 ```
@@ -33,14 +33,14 @@ v3.39.1
 
 Verify you account and view the activity in the live web monitor of Pulumi
 
-```
+```bahs
 pulumi whoami                                         
 olcortesb
 ```
 
 The link to live web monitor is in *`pulumi up`* or *`pulumi preview`* commands
 
-```
+```bash
 pulumi up
 
 Previewing update (dev)
@@ -53,19 +53,37 @@ View Live: https://app.pulumi.com/olcortesb/pulumi-challenge-august-22/dev/previ
 
 In the index.html , change the lines 
 
-```
+```html
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
 ```
 by 
 
-```
+```html
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./normalize.css">
 ```
 
 for view the web in the browser locally with the css style, in the video tutorial this is explained.
 
+## Disclaimer
+I remove the pulumi-challenge-august-22/Pulumi.dev.yaml file for security.
+
+I remove my data of code for last step of tutorial.
+
+```javascrit
+import { Swag } from "./swag-provider";
+
+const swag = new Swag("olcortesb-pulumi", {
+  name: "YOUR NAME",
+  email: "YOUR EMAIL", 
+  address: "YOUR ADDRESS",
+  size: "SIZE",
+});
+```
+
 ## Conclusions
 
 This is a great initiative of Pulumi for usage all power of IaC and Pulumi in real problems. 
+
+Follow step by step the official tutorial of Pulumi and used this repo as reference if you ned
