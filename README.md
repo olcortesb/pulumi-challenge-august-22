@@ -86,4 +86,4 @@ const swag = new Swag("olcortesb-pulumi", {
 
 This is a great initiative of Pulumi for usage all power of IaC and Pulumi in real problems. 
 
-Follow step by step the official tutorial of Pulumi and used this repo as reference if you ned
+Follow step by step the official tutorial of Pulumi and used this repo as reference if you need
